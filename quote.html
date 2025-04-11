@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote - King Tai Printing & Packaging</title>
+    <meta name="description" content="Get a custom quote for your printing and packaging needs">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html">
+                    <img src="images/logo.webp" alt="King Tai Printing & Packaging" class="logo">
+                </a>
+
+                <nav>
+                    <a href="index.html">HOME</a>
+                    <div class="dropdown">
+                        <a href="products.html">PRODUCTS</a>
+                        <div class="dropdown-content">
+                            <a href="products/books.html">Books</a>
+                            <a href="products/bibles.html">Bibles</a>
+                            <a href="products/journals.html">Journals</a>
+                            <a href="products/calendars.html">Calendars</a>
+                            <a href="products/game-cards.html">Game Cards</a>
+                            <a href="products/gift-boxes.html">Gift Boxes</a>
+                            <a href="products/jewelry-boxes.html">Jewelry Boxes</a>
+                            <a href="products/cosmetics-boxes.html">Cosmetics Boxes</a>
+                            <a href="products/wine-boxes.html">Wine Boxes</a>
+                            <a href="products/wooden-boxes.html">Wooden Boxes</a>
+                            <a href="products/greeting-cards.html">Greeting Cards</a>
+                            <a href="products/shopping-bags.html">Shopping Bags</a>
+                        </div>
+                    </div>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="quote.html" class="btn-primary">REQUEST A QUOTE</a>
+                </nav>
+
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="quote-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Request a Quote</h1>
+                <p>Get a customized quote for your printing and packaging needs</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Quote Form Section -->
+        <section class="quote-section">
+            <div class="container">
+                <div class="quote-form-container">
+                    <form action="#" method="POST" class="quote-form">
+                        <!-- Company Information -->
+                        <div class="form-section">
+                            <h2>Company Information</h2>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="company">Company Name</label>
+                                    <input type="text" id="company" name="company" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-name">Contact Name</label>
+                                    <input type="text" id="contact-name" name="contact-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="address">Address</label>
+                                    <textarea id="address" name="address" rows="3" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="form-section">
+                            <h2>Product Details</h2>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="product-type">Product Type</label>
+                                    <select id="product-type" name="product-type" required>
+                                        <option value="">Select a product type</option>
+                                        <option value="books">Books</option>
+                                        <option value="bibles">Bibles</option>
+                                        <option value="journals">Journals</option>
+                                        <option value="calendars">Calendars</option>
+                                        <option value="game-cards">Game Cards</option>
+                                        <option value="gift-boxes">Gift Boxes</option>
+                                        <option value="jewelry-boxes">Jewelry Boxes</option>
+                                        <option value="cosmetics-boxes">Cosmetics Boxes</option>
+                                        <option value="wine-boxes">Wine Boxes</option>
+                                        <option value="wooden-boxes">Wooden Boxes</option>
+                                        <option value="greeting-cards">Greeting Cards</option>
+                                        <option value="shopping-bags">Shopping Bags</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="quantity">Quantity</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="size">Size/Dimensions</label>
+                                    <input type="text" id="size" name="size" placeholder="e.g., 6x9 inches" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="material">Preferred Material</label>
+                                    <input type="text" id="material" name="material" placeholder="e.g., 80# Gloss">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="specifications">Additional Specifications</label>
+                                    <textarea id="specifications" name="specifications" rows="4" placeholder="Please provide any additional details about your project"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline -->
+                        <div class="form-section">
+                            <h2>Project Timeline</h2>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="deadline">Desired Completion Date</label>
+                                    <input type="date" id="deadline" name="deadline" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="shipping">Shipping Method</label>
+                                    <select id="shipping" name="shipping" required>
+                                        <option value="">Select shipping method</option>
+                                        <option value="standard">Standard Shipping</option>
+                                        <option value="express">Express Shipping</option>
+                                        <option value="air">Air Freight</option>
+                                        <option value="sea">Sea Freight</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary full-width">Submit Quote Request</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div>
+                    <h3>King Tai Printing</h3>
+                    <p>
+                        Your trusted partner in high-quality printing and packaging solutions. 
+                        Serving clients worldwide with innovation and excellence.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3>Contact Us</h3>
+                    <div class="space-y-4">
+                        <div class="contact-info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>
+                                Rm 9/F Silvercorp Int'l Tower<br>
+                                707-713 Nathan Road Mongkok,<br>
+                                Hong Kong
+                            </p>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+8615013169618">+86 150 1316 9618</a>
+                        </div>
+                        <div class="contact-info">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@kingtaipp.com">info@kingtaipp.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>© <script>document.write(new Date().getFullYear())</script> King Tai Printing & Packaging. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
